@@ -15,7 +15,7 @@
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid" id="navdiv">
-    <div class="navbar-header">
+   <div class="navbar-header">
       <img src="NavBarLogo.PNG" style="width:70%; height:70%;">
     </div>
   
@@ -90,14 +90,14 @@
 	</div>
 	<hr>
 	<div id="categorydrop" class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="font-weight:bold; padding:0px; background-color:white; font-size:20px; color:black; border-color:white; outline:none;">Category&emsp;&emsp;
-  <span class="caret"></span></button>
+  <button id="catbtn" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="font-weight:bold; padding:0px; background-color:white; font-size:20px; color:black; border-color:white; outline:none;">Category&emsp;&emsp;
+  <span class="caret"></span></button> <p id="cont"></p>
   <ul class="dropdown-menu">
-    <li><a href="#">Electronics</a></li>
-    <li><a href="#">Appliances</a></li>
-    <li><a href="#">Healthcare</a></li>
-    <li><a href="#">Furniture</a></li>
-    <li><a href="#">Automobile</a></li>
+    <li><a href="#"><input id="Electronics" type="radio" name="category" value='Electronics'><label class="radio-label">&nbsp;Electronics</label></a></li>
+    <li><a href="#"><input  id="Appliances" type="radio" name="category" value='Appliances'><label class="radio-label">&nbsp;Appliances</label></a></li>
+    <li><a href="#"><input  id="Healthcare" type="radio" name="category" value='Healthcare'><label class="radio-label">&nbsp;Healthcare</label></a></li>
+    <li><a href="#"><input  id="Furniture" type="radio" name="category" value='Furniture'><label class="radio-label">&nbsp;Furniture</label></a></li>
+    <li><a href="#"><input  id="Automobile" type="radio" name="category" value='Automobile'><label class="radio-label">&nbsp;Automobile</label></a></li>
   </ul>
 </div>
 	<hr>
@@ -119,6 +119,7 @@
 	</form>
     </div>
     </div>
+   
 
   </div>
   <div id="menu1" class="tab-pane fade">
