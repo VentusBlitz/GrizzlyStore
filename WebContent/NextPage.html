@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -71,9 +72,9 @@
   <div class="col-sm-3 ">
   
   <ul id="pill" class="nav nav-pills nav-justified">
-  <li style="text-align:left;" class="active"><a id="products" data-toggle="pill"href="#home">PRODUCTS</a></li>
-  <li style="text-align:left;"><a id="vendors"  data-toggle="pill" href="#menu1">VENDORS</a></li>
-  <li style="text-align:left;"><a id="category"  data-toggle="pill" href="#menu1">CATEGORY</a></li>
+  <li class="nav-item pill-1 active" style="text-align:left;"><a class="nav-link" id="products" data-toggle="tab"href="#home">PRODUCTS</a></li>
+  <li class="nav-item pill-2" id="id1" style="text-align:left;"><a class="nav-link" id="vendors"  data-toggle="tab" href="#menu1">VENDORS</a></li>
+  <li class="nav-item pill-3" id="id1" style="text-align:left;"><a class="nav-link" id="category"  data-toggle="tab" href="#menu1">CATEGORY</a></li>
 </ul>
 <br/>
 <div class="tab-content">
@@ -136,7 +137,7 @@
     <form>
     <input type="submit" formaction="ProductPage.html" id="view1" class="btn btn-default" value="View" style="width:100px;" disabled>
     <input type="submit" id="block1" class="btn btn-default" value="Block" style="width:100px;" disabled>
-    <input type="submit" id="remove1" class="btn btn-default" value="Remove" style="width:100px;" disabled>
+    <input type="submit" onclick="myDeleteFunction(this)" id="remove1" class="btn btn-default" value="Remove" style="width:100px;" disabled>
     </form></td>
     
     </tr>
@@ -150,7 +151,7 @@
     <td class="lastcol">
     <input type="submit" id="view2" class="btn btn-default" value="View" style="width:100px;" disabled>
     <input type="submit" id="block2" class="btn btn-default" value="Block" style="width:100px;" disabled>
-    <input type="submit" id="remove2" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    <input type="submit" id="remove2" class="btn btn-default" onclick="myDeleteFunction(this)" value="Remove" style="width:100px;" disabled></td>
     </tr>
     <tr>
     <td class="regular"><div class="checkbox">
@@ -162,7 +163,7 @@
     <td class="lastcol">
     <input type="submit" id="view3" class="btn btn-default" value="View" style="width:100px;" disabled>
     <input type="submit" id="block3" class="btn btn-default" value="Block" style="width:100px;" disabled>
-    <input type="submit" id="remove3" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    <input type="submit" onclick="myDeleteFunction(this)" id="remove3" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
     </tr>
     <tr>
     <td class="regular"><div class="checkbox">
@@ -175,7 +176,7 @@
     <td class="lastcol">
     <input type="submit" id="view4" class="btn btn-default" value="View" style="width:100px;" disabled>
     <input type="submit" id="block4" class="btn btn-default" value="Block" style="width:100px;" disabled>
-    <input type="submit" id="remove4" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    <input type="submit" onclick="myDeleteFunction(this)" id="remove4" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
     </tr>
     <tr>
     <td class="regular"><div class="checkbox">
@@ -188,7 +189,7 @@
     <td class="lastcol">
     <input type="submit" id="view5" class="btn btn-default" value="View" style="width:100px;" disabled>
     <input type="submit" id="block5" class="btn btn-default" value="Block" style="width:100px;" disabled>
-    <input type="submit" id="remove5" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    <input type="submit" onclick="myDeleteFunction(this)" id="remove5" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
     </tr>
     <tr>
     <td class="regular"><div class="checkbox">
@@ -201,7 +202,7 @@
     <td class="lastcol">
     <input type="submit" id="view6" class="btn btn-default" value="View" style="width:100px;" disabled>
     <input type="submit" id="block6" class="btn btn-default" value="Block" style="width:100px;" disabled>
-    <input type="submit" id="remove6" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    <input type="submit" onclick="myDeleteFunction(this)" id="remove6" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
     </tr>
 
     </table>

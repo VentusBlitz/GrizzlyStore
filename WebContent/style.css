@@ -249,3 +249,38 @@ div.ad-right input{
 	font-weight:bold;
 	color:grey;
 }
+#usr1:focus::-webkit-input-placeholder, 
+#pwd1:focus::-webkit-input-placeholder, 
+#pwd2:focus::-webkit-input-placeholder, 
+#pwd3:focus::-webkit-input-placeholder {
+	color:transparent; 
+	}
+	
+	
+	.nav-pills .pill-1 .nav-link:not(.active) {
+    background-color: grey;
+}
+
+.nav-pills .pill-2 .nav-link:not(.active) {
+    background-color: grey;
+}
+
+.nav-pills .pill-3 .nav-link:not(.active) {
+    background-color: grey;
+}
+
+
+/* active (faded) */
+.nav-pills .pill-1 .nav-link:focus {
+    background-color: #c9c9c9;
+}
+
+.nav-pills .pill-2 .nav-link:focus {
+    background-color: #c9c9c9;
+}
+
+.nav-pills .pill-3 .nav-link:focus {
+    background-color: #c9c9c9;
+}
+
+
